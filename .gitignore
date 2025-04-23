@@ -12,7 +12,6 @@
 node_modules/
 dist/
 .angular/
-patient-frontend/patient-web/
 
 
 # Ignora file Java compilati
