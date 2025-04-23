@@ -1,0 +1,24 @@
+# Ignora file Eclipse
+.metadata/
+*.log
+*.class
+*.iml
+.idea/
+*.project
+*.classpath
+.settings/
+
+# Ignora file Angular e Node
+node_modules/
+dist/
+.angular/
+patient-frontend/patient-web/
+
+
+# Ignora file Java compilati
+target/
+
+# Ignora file con dati sensibili
+.env
+application.properties
+application.yml
