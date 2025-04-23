@@ -1,0 +1,45 @@
+<div class="container" style="width: 350px;">
+
+    <div>
+        <!--<button mat-icon-button style="float: right; margin: 15px">
+            <mat-icon style="color:red">close</mat-icon>
+        </button>-->
+    </div>
+    <div matDialogTitle>
+        <h3 style="color: blueviolet;">Patient Form</h3>
+    </div>
+    <div matDialogContent>
+        <mat-form-field>
+            <input matInput type="text" [(ngModel)]="data.firstName" placeholder="Enter name">
+            <mat-icon fontIcon= "person" matSuffix></mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput type="text" [(ngModel)]="data.lastName" placeholder="Enter surname">
+            <mat-icon fontIcon= "person" matSuffix></mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput type="date" [(ngModel)]="data.dateOfBirth" placeholder="Enter date of birth">
+            <mat-icon fontIcon= "calendar_today" matSuffix></mat-icon>
+        </mat-form-field>
+        <br>    <mat-form-field>
+            <input matInput type="email" [(ngModel)]="data.email" placeholder="Enter email">
+            <mat-icon fontIcon= "email" matSuffix></mat-icon>
+        </mat-form-field>
+        <br>    <mat-form-field>
+            <input matInput type="tel" [(ngModel)]="data.phone" placeholder="Enter phone">
+            <mat-icon fontIcon= "phone" matSuffix></mat-icon>
+        </mat-form-field>
+        <br>    <mat-form-field>
+            <input matInput type="text" [(ngModel)]="data.address" placeholder="Enter address">
+            <mat-icon fontIcon= "home" matSuffix></mat-icon>
+        </mat-form-field>
+        <br>
+    </div>
+
+    <div matDialogActions align="center">
+        <button mat-flat-button (click)="addOrEditPatients(data)" [mat-dialog-close]="data">Submit</button>
+        <button mat-raised-button matDialogClose="true" style="background-color: #f44336; color: white;">Cancel</button>
+    </div>
+</div>
